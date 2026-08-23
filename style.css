@@ -1,14 +1,31 @@
 *{
 padding : 0;
+box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
 }
 .container{
     display:flex;
     flex-wrap: wrap;
-    width: 680px;
-    height :680px;
+    width: 600px;
+    height: 600px;
 }
 .squareDiv{
-    width : 40px;
-    height : 40px;
+    aspect-ratio: 1 / 1;
     border: 1px solid lightgray;
+    min-height:0;
+    min-width: 0;
+}
+.button{
+    height: 85px;
+    width: 200px;
+    border-radius: 5px;
+    border : 1px solid lightgrey;
+    background-color: lightcoral;
+
 }
